@@ -8,7 +8,24 @@
     }
   ],
   "unlinked_binary": "0x60606040523415600b57fe5b5b5b5b603380601b6000396000f30060606040525bfe00a165627a7a72305820cb747925cec5b430c3ca6859affdfebd62da49ea29d382b9c61b3ad56c83d5000029",
-  "networks": {},
+  "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "updated_at": 1501521255388
+    },
+    "4": {
+      "links": {},
+      "events": {},
+      "updated_at": 1501519358022
+    },
+    "10": {
+      "events": {},
+      "links": {},
+      "address": "0xdafd045b41c5fcfce0d5ec741d363f97fe2a25eb",
+      "updated_at": 1501520955283
+    }
+  },
   "schema_version": "0.0.5",
-  "updated_at": 1501471403457
+  "updated_at": 1501521255388
 }
