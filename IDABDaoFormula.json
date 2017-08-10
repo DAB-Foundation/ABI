@@ -1,31 +1,27 @@
 {
-  "contract_name": "ILoanPlanFormula",
+  "contract_name": "IDABDaoFormula",
   "abi": [
     {
       "constant": false,
       "inputs": [
         {
-          "name": "_supply",
+          "name": "circulation",
           "type": "uint256"
         },
         {
-          "name": "_circulation",
+          "name": "vote",
+          "type": "uint256"
+        },
+        {
+          "name": "supportRate",
           "type": "uint256"
         }
       ],
-      "name": "getLoanPlan",
+      "name": "isApproved",
       "outputs": [
         {
           "name": "",
-          "type": "uint256"
-        },
-        {
-          "name": "",
-          "type": "uint256"
-        },
-        {
-          "name": "",
-          "type": "uint256"
+          "type": "bool"
         }
       ],
       "payable": false,
@@ -35,5 +31,5 @@
   "unlinked_binary": "0x",
   "networks": {},
   "schema_version": "0.0.5",
-  "updated_at": 1502266888276
+  "updated_at": 1502266461764
 }

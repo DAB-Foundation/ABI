@@ -7,8 +7,20 @@
       "type": "constructor"
     }
   ],
-  "unlinked_binary": "0x60606040523415600b57fe5b5b5b5b603380601b6000396000f30060606040525bfe00a165627a7a72305820cb747925cec5b430c3ca6859affdfebd62da49ea29d382b9c61b3ad56c83d5000029",
-  "networks": {},
+  "unlinked_binary": "0x60606040523415600b57fe5b5b5b5b603380601b6000396000f30060606040525bfe00a165627a7a723058207ca25b4172a86d520fd8c2425505e2cfe1ca1a44a8bb9d691d3848fd2d6b40de0029",
+  "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "updated_at": 1502267024624
+    },
+    "1502266851676": {
+      "events": {},
+      "links": {},
+      "address": "0xdfaf018d2497e717c7217862f6da773cc79f06e8",
+      "updated_at": 1502266889565
+    }
+  },
   "schema_version": "0.0.5",
-  "updated_at": 1501471403457
+  "updated_at": 1502267024624
 }

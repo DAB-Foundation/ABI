@@ -2,10 +2,10 @@
   "contract_name": "IDABFormula",
   "abi": [
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "cdtBalance",
+          "name": "ethBalance",
           "type": "uint256"
         },
         {
@@ -32,7 +32,7 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
           "name": "ethRepayAmount",
@@ -62,10 +62,10 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "dptBalance",
+          "name": "ethBalance",
           "type": "uint256"
         },
         {
@@ -104,10 +104,10 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "depCirculation",
+          "name": "dptCirculation",
           "type": "uint256"
         },
         {
@@ -146,10 +146,48 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "cdtBalance",
+          "name": "cdtAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "interestRate",
+          "type": "uint256"
+        },
+        {
+          "name": "dptCRR",
+          "type": "uint256"
+        }
+      ],
+      "name": "loan",
+      "outputs": [
+        {
+          "name": "ethAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "ethInterest",
+          "type": "uint256"
+        },
+        {
+          "name": "cdtIssuanceAmount",
+          "type": "uint256"
+        },
+        {
+          "name": "sctAmount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "ethBalance",
           "type": "uint256"
         },
         {
@@ -176,10 +214,10 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "dptBalance",
+          "name": "ethBalance",
           "type": "uint256"
         },
         {
@@ -210,7 +248,7 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
           "name": "ethRepayAmount",
@@ -238,44 +276,10 @@
       ],
       "payable": false,
       "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "cdtAmount",
-          "type": "uint256"
-        },
-        {
-          "name": "interestRate",
-          "type": "uint256"
-        }
-      ],
-      "name": "loan",
-      "outputs": [
-        {
-          "name": "ethAmount",
-          "type": "uint256"
-        },
-        {
-          "name": "ethInterest",
-          "type": "uint256"
-        },
-        {
-          "name": "cdtIssuanceAmount",
-          "type": "uint256"
-        },
-        {
-          "name": "sctAmount",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "type": "function"
     }
   ],
   "unlinked_binary": "0x",
   "networks": {},
   "schema_version": "0.0.5",
-  "updated_at": 1501471403458
+  "updated_at": 1502266888276
 }

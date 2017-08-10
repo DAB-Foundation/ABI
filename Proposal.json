@@ -1,88 +1,14 @@
 {
-  "contract_name": "ISmartToken",
+  "contract_name": "Proposal",
   "abi": [
     {
       "constant": true,
       "inputs": [],
-      "name": "name",
+      "name": "proposalPrice",
       "outputs": [
         {
-          "name": "name",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_spender",
-          "type": "address"
-        },
-        {
-          "name": "_value",
+          "name": "",
           "type": "uint256"
-        }
-      ],
-      "name": "approve",
-      "outputs": [
-        {
-          "name": "success",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_disable",
-          "type": "bool"
-        }
-      ],
-      "name": "disableTransfers",
-      "outputs": [],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "totalSupply",
-      "outputs": [
-        {
-          "name": "totalSupply",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_from",
-          "type": "address"
-        },
-        {
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "name": "_value",
-          "type": "uint256"
-        }
-      ],
-      "name": "transferFrom",
-      "outputs": [
-        {
-          "name": "success",
-          "type": "bool"
         }
       ],
       "payable": false,
@@ -91,11 +17,58 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "decimals",
+      "name": "voteToken",
       "outputs": [
         {
-          "name": "decimals",
-          "type": "uint8"
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "acceptVoteTokenControllerOwnership",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "endTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "proposalContract",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "dao",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
         }
       ],
       "payable": false,
@@ -105,35 +78,34 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_token",
+          "name": "_voter",
           "type": "address"
         },
         {
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "name": "_amount",
+          "name": "_voteAmount",
           "type": "uint256"
         }
       ],
-      "name": "withdrawTokens",
+      "name": "vote",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "execute",
       "outputs": [],
       "payable": false,
       "type": "function"
     },
     {
       "constant": true,
-      "inputs": [
-        {
-          "name": "_owner",
-          "type": "address"
-        }
-      ],
-      "name": "balanceOf",
+      "inputs": [],
+      "name": "startTime",
       "outputs": [
         {
-          "name": "balance",
+          "name": "",
           "type": "uint256"
         }
       ],
@@ -149,19 +121,15 @@
       "type": "function"
     },
     {
-      "constant": false,
-      "inputs": [
+      "constant": true,
+      "inputs": [],
+      "name": "voteTokenController",
+      "outputs": [
         {
-          "name": "_to",
+          "name": "",
           "type": "address"
-        },
-        {
-          "name": "_amount",
-          "type": "uint256"
         }
       ],
-      "name": "issue",
-      "outputs": [],
       "payable": false,
       "type": "function"
     },
@@ -171,7 +139,36 @@
       "name": "owner",
       "outputs": [
         {
-          "name": "owner",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "redeem",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "propose",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "depositToken",
+      "outputs": [
+        {
+          "name": "",
           "type": "address"
         }
       ],
@@ -181,72 +178,11 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "symbol",
+      "name": "newOwner",
       "outputs": [
         {
-          "name": "symbol",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_from",
+          "name": "",
           "type": "address"
-        },
-        {
-          "name": "_amount",
-          "type": "uint256"
-        }
-      ],
-      "name": "destroy",
-      "outputs": [],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "name": "_value",
-          "type": "uint256"
-        }
-      ],
-      "name": "transfer",
-      "outputs": [
-        {
-          "name": "success",
-          "type": "bool"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "_owner",
-          "type": "address"
-        },
-        {
-          "name": "_spender",
-          "type": "address"
-        }
-      ],
-      "name": "allowance",
-      "outputs": [
-        {
-          "name": "remaining",
-          "type": "uint256"
         }
       ],
       "payable": false,
@@ -264,10 +200,49 @@
       "outputs": [],
       "payable": false,
       "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_dao",
+          "type": "address"
+        },
+        {
+          "name": "_voteTokenController",
+          "type": "address"
+        },
+        {
+          "name": "_proposalContract",
+          "type": "address"
+        },
+        {
+          "name": "_duration",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_prevOwner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerUpdate",
+      "type": "event"
     }
   ],
   "unlinked_binary": "0x",
   "networks": {},
   "schema_version": "0.0.5",
-  "updated_at": 1502266888276
+  "updated_at": 1502266461763
 }
